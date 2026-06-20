@@ -133,7 +133,7 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-background min-h-screen pb-32">
+<body class="bg-background text-on-background min-h-screen pb-32 min-h-screen flex flex-col">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-[0_0_15px_rgba(231,208,0,0.1)]">
     <div class="flex items-center justify-between px-sm md:px-lg h-16 max-w-container-max mx-auto">
@@ -158,7 +158,7 @@
         </div>
     </div>
 </header>
-<main class="pt-24 px-md max-w-container-max mx-auto text-center">
+<main class="pt-24 px-md max-w-container-max mx-auto text-center flex-1">
     <h1>EN_CONSTRUCCION</h1>
 </main>
 <!-- Footer -->
@@ -174,35 +174,9 @@
     </div>
 </footer>
 <!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container/80 dark:bg-surface-container/80 backdrop-blur-lg border-t border-white/10 shadow-xl md:hidden">
-    <div class="flex justify-around items-center h-20 px-xs">
-        <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-           href="index.html">
-            <span class="material-symbols-outlined" data-icon="home">home</span>
-            <span class="font-label-md text-label-md">HOME</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-           href="contacto.html">
-            <span class="material-symbols-outlined" data-icon="person">person</span>
-            <span class="font-label-md text-label-md">CONTACTO</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-           href="formacion_academica.html">
-            <span class="material-symbols-outlined" data-icon="school">school</span>
-            <span class="font-label-md text-label-md">EDU</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-           href="experiencia_laboral.html">
-            <span class="material-symbols-outlined" data-icon="work">work</span>
-            <span class="font-label-md text-label-md">WORK</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-secondary bg-secondary/10 rounded-xl p-xs active:scale-90 transition-all duration-200"
-           href="proyectos.html">
-            <span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
-            <span class="font-label-md text-label-md">PROYECTOS</span>
-        </a>
-    </div>
-</nav>
+<div id="navbar-placeholder"></div>
+<script src="navbar.html"></script>
+<script src="static/assets/app.js"></script>
 <script>
     // Micro-interactions for hover effects and subtle parallax
     document.querySelectorAll('.glass-card').forEach(card => {

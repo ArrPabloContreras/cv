@@ -1435,7 +1435,7 @@
                     <span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
                 </button>
                 <button class="border border-tertiary text-tertiary px-lg py-sm font-label-md text-label-md rounded-xl hover:bg-tertiary/10 transition-all duration-300 active:scale-95 flex items-center justify-center gap-xs">
-                    CV_DOWNLOAD
+                    <a href="static/assets/archives/Currículum%20Vitae%20Pablo5.pdf" download="Curriculum_Pablo_Arriagada">CV_DOWNLOAD</a>
                     <span class="material-symbols-outlined" data-icon="download">download</span>
                 </button>
             </div>
@@ -1480,17 +1480,17 @@
             </div>
             <!-- Small Cards -->
             <div class="glass-card p-lg rounded-xl hover:bg-surface-container transition-colors duration-300">
-                <span class="material-symbols-outlined text-tertiary text-2xl mb-md" data-icon="html">html</span>
-                <h3 class="font-label-md text-label-md text-on-surface font-bold">Fullstack developer</h3>
-                <p class="text-on-surface-variant text-[12px] mt-xs">Tengo conocimientos en HTML, CSS y Javascript. He
+                <span class="material-symbols-outlined text-tertiary text-6xl mb-md" data-icon="html">html</span>
+                <h2 class=" text-on-surface font-bold text-[20px]">Fullstack developer</h2>
+                <p class="text-on-surface-variant text-[16px] mt-xs">Tengo conocimientos en HTML, CSS y Javascript. He
                     trabajado con variadas librerías, entre ellas incluyo a Bootstrap y Tailwind.</p>
             </div>
             <div class="glass-card p-lg rounded-xl hover:bg-surface-container transition-colors duration-300">
-                <span class="material-symbols-outlined text-tertiary text-2xl mb-md"
+                <span class="material-symbols-outlined text-tertiary text-6xl mb-md"
                       data-icon="database">database</span>
-                <h3 class="font-label-md text-label-md text-on-surface font-bold">Hardware</h3>
-                <p class="text-on-surface-variant text-[12px] mt-xs">Desde muy pequeño he desarmado variados aparatos
-                    electrónicos arreglarlos y volver a armarlos (a veces sin mucho éxito)</p>
+                <h3 class="text-[20px] text-on-surface font-bold">Hardware</h3>
+                <p class="text-on-surface-variant text-[16px] mt-xs">Desde muy pequeño he desarmado variados aparatos
+                    electrónicos arreglarlos y volver a armarlos (a veces sin mucho éxito).</p>
             </div>
         </div>
     </section>
@@ -1537,28 +1537,10 @@
     </div>
 </footer>
 <!-- BottomNavBar (Mobile only) -->
-<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container/80 dark:bg-surface-container/80 backdrop-blur-lg border-t border-white/10 shadow-xl flex justify-around items-center h-20 px-xs md:hidden">
-    <a class="flex flex-col items-center justify-center text-secondary bg-secondary/10 rounded-xl p-xs active:scale-9 transition-all duration-200"
-       href="index.html">
-        <span class="material-symbols-outlined" data-icon="home">home</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="contacto.html">
-        <span class="material-symbols-outlined" data-icon="person">person</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="formacion_academica.html">
-        <span class="material-symbols-outlined" data-icon="school">school</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="experiencia_laboral.html">
-        <span class="material-symbols-outlined" data-icon="work">work</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="proyectos.html">
-        <span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
-    </a>
-</nav>
+
+<div id="navbar-placeholder"></div>
+<script src="navbar.html"></script>
+<script src="static/assets/app.js"></script>
 <script>
     // Subtle mouse tracking glow effect for hero section
     document.addEventListener('mousemove', (e) => {

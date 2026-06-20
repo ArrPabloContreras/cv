@@ -212,8 +212,6 @@
         </div>
         <div class="md:w-1/2 order-3"></div>
     </div>
-    </div>
-    </div>
     <section class="mt-xl">
         <div class="glass-card p-lg rounded-xl flex flex-col md:flex-row items-center gap-lg">
             <div class="flex-1">
@@ -222,7 +220,7 @@
                 <p class="text-body-lg text-on-surface-variant">Me encuentro en la búsqueda de oportunidades nuevas</p>
             </div>
             <button class="bg-secondary text-on-secondary-fixed font-label-md text-label-md px-lg py-sm rounded-xl hover:shadow-[0_0_20px_rgba(255,237,118,0.4)] transition-all duration-300 active:scale-95">
-                DESCARGAR_CV
+                <a href="static/assets/archives/Currículum%20Vitae%20Pablo5.pdf" download="Curriculum_Pablo_Arriagada">DESCARGAR_CV</a>
             </button>
         </div>
     </section>
@@ -238,33 +236,9 @@
         </div>
     </div>
 </footer>
-<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container/80 dark:bg-surface-container/80 backdrop-blur-lg border-t border-white/10 shadow-xl flex justify-around items-center h-20 px-xs md:hidden">
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="index.html">
-        <span class="material-symbols-outlined" data-icon="home">home</span>
-        <span class="font-label-md text-label-md">HOME</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="contacto.html">
-        <span class="material-symbols-outlined" data-icon="person">person</span>
-        <span class="font-label-md text-label-md">CONTACTO</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="formacion_academica.html">
-        <span class="material-symbols-outlined" data-icon="school">school</span>
-        <span class="font-label-md text-label-md">EDU</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-secondary bg-secondary/10 rounded-xl p-xs active:scale-90 transition-all duration-200"
-       href="experiencia_laboral.html">
-        <span class="material-symbols-outlined" data-icon="work">work</span>
-        <span class="font-label-md text-label-md">WORK</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-on-surface-variant/60 active:scale-90 transition-all duration-200 hover:text-secondary/80"
-       href="proyectos.html">
-        <span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
-        <span class="font-label-md text-label-md">PROYECTOS</span>
-    </a>
-</nav>
+<div id="navbar-placeholder"></div>
+<script src="navbar.html"></script>
+<script src="static/assets/app.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const cards = document.querySelectorAll('.glass-card');
